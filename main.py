@@ -1,4 +1,5 @@
 from game.upDown import playUpDown
+from game.rps import playRPS
 
 while True:
     print("\n===== mini game =====")
@@ -16,6 +17,8 @@ while True:
 
         if menu == 1:
             playUpDown()
+        elif menu == 2:
+            playRPS()
         elif menu == 0:
             print("프로그램을 종료합니다.")
             break
