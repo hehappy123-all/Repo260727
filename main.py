@@ -1,3 +1,5 @@
+from game.upDown import playUpDown
+
 while True:
     print("\n===== mini game =====")
     print("1. 업다운 게임")
@@ -12,7 +14,9 @@ while True:
     try:
         menu = int(input("메뉴 선택 : "))
 
-        if menu == 0:
+        if menu == 1:
+            playUpDown()
+        elif menu == 0:
             print("프로그램을 종료합니다.")
             break
         else:
